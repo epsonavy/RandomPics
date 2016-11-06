@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Pics:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_btn"
+            android:text="Back"
+            android:onClick="backClicked"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear_btn"
+            android:text="Clear All"
+            android:onClick="clearClicked"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/saveGrid"
+        android:numColumns="auto_fit"
+        android:layout_marginBottom="10dp"
+        android:verticalSpacing="5dp"
+
+        android:columnWidth="90dp"
+        android:rowHeight="90dp">
+
+    </GridView>
+
+
+</LinearLayout>

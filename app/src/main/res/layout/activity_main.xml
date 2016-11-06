@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search pic:"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text=""
+        android:maxLines="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_btn"
+            android:text="Search"
+            android:onClick="searchClicked"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/random_btn"
+            android:text="Random"
+            android:onClick="randomClicked"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_btn"
+            android:text="Save"
+            android:onClick="saveClicked"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myphotos_btn"
+            android:text="My Pics"
+            android:onClick="myPhotoClicked"/>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/picGrid"
+        android:numColumns="auto_fit"
+        android:layout_marginBottom="10dp"
+        android:verticalSpacing="5dp"
+        android:columnWidth="90dp"
+        android:rowHeight="90dp">
+
+    </GridView>
+
+</LinearLayout>
